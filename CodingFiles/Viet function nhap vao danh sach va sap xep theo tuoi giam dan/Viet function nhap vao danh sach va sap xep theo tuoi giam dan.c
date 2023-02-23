@@ -52,6 +52,7 @@ int main(){
 				fileRead(f);
 			}else if(t==4){
 				printf("Dang xoa danhsachnhanvien.txt...\n");
+				fclose(f);
 				int del=remove("danhsachnhanvien.txt");
 				if(del==0){
 					printf("Da xoa tap tin.");
